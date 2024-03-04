@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library - Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./home.html">Book Library</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="active"><a href="./service.html">Services</a></li>
+                <li><a href="./login.html">Login / Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Service Page Content -->
+    <section id="services" class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+        </div>
+    
+        <div class="row service-row">
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Book Recommendations</h3>
+                    <p>Get personalized book recommendations based on your interests and preferences.</p>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Book Club Memberships</h3>
+                    <p>Join our book clubs to discuss and explore literature with fellow book enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row service-row">
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Author Events</h3>
+                    <p>Attend exclusive events featuring your favorite authors and discover new literary voices.</p>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="service-item">
+                    <h3>Library Workshops</h3>
+                    <p>Participate in educational workshops and enhance your writing and reading skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <!-- Footer Section -->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>&copy; 2024 Book Library. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" style="color: #3b5998;"><i class="fa fa-facebook"></i></a>
+                    <a href="#" style="color: #1da1f2;"><i class="fa fa-twitter"></i></a>
+                    <a href="#" style="color: #0077b5;"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" style="color: #bc2a8d;"><i class="fa fa-instagram"></i></a>
+                    <a href="#" style="color: #bd081c;"><i class="fa fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+</footer>
+<!--/.footer-->
+
+
+    <!-- Scroll to Top Button -->
+    <div id="scroll-Top">
+        <div class="return-to-top">
+            <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+                data-original-title="Back to Top" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Custom JS for Owl Carousel Initialization and Scroll to Top -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+            });
+    
+            // Scroll to Top Functionality
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll-Top').fadeIn();
+                } else {
+                    $('#scroll-Top').fadeOut();
+                }
+            });
+    
+            $('#scroll-Top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

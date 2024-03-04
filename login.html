@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+  
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+       <!-- Custom Styles -->
+       <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./home.html">Book Library</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li class="active"><a href="./login.html">Login / Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <form id="loginForm" action="login.php" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+       <!-- Footer Section -->
+       <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>&copy; 2024 Book Library. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a href="#" style="color: #3b5998;"><i class="fa fa-facebook"></i></a>
+                        <a href="#" style="color: #1da1f2;"><i class="fa fa-twitter"></i></a>
+                        <a href="#" style="color: #0077b5;"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" style="color: #bc2a8d;"><i class="fa fa-instagram"></i></a>
+                        <a href="#" style="color: #bd081c;"><i class="fa fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1;
+}
+
+h2{
+    padding: 20px;
+    font-weight: 400;
+}
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px; /* Adjusted max-width for better responsiveness */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 100%; /* Make input fields responsive */
+    box-sizing: border-box; /* Ensure padding and border don't increase the width */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 100%; /* Make buttons responsive */
+    box-sizing: border-box; /* Ensure padding and border don't increase the width */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url('./images/nejc-soklic-wO42Rmamef8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #ffffff; 
+}
+
+/* Search Bar Section Styles */
+#search-bar {
+    background-color: #f8f8f8;
+    padding: 30px 20px;
+}
+
+.search-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Service Section Styles */
+#services {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+#featured-books{
+    padding: 50px;
+}
+/* Footer Section Styles */
+/* Footer Section Styles */
+#footer {
+    background-color: #e1e1e1;
+    padding: 30px 20px;
+    margin-top: auto; /* Add this line to push the footer to the bottom */
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer .footer-social a {
+    margin-right: 10px;
+    color: #333; /* Add this line to ensure the social icons are visible */
+}
+
+#scroll-Top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .navbar-toggle {
+        display: block !important;
+    }
+    .navbar-header {
+        float: none;
+    }
+}
+.container p {
+    text-align: center;
+}
+
+.col-md-3{
+    padding: 10px;
+}
+.col-md-6{
+    padding: 10px;
+}
